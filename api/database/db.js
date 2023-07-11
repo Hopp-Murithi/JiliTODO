@@ -1,7 +1,7 @@
 const mssql = require('mssql');
 const path = require('path');
 
-require('dotenv').config({path: path.resolve(__dirname,'../config/config.env')});
+
 
 
 const sqlConfig = {
