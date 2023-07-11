@@ -20,7 +20,7 @@ process.on('uncaughtException',(error)=>{
 
 
 const server = app.listen(process.env.PORT,()=>{
-    console.clear();
+    // console.clear();
     console.log(`The server is listening on port ${process.env.PORT} on ${process.env.NODE_ENV} environment`)
 })
 
