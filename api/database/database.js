@@ -1,5 +1,5 @@
 const mssql = require('mssql');
-const path = require('path');
+
 
 
 
@@ -20,7 +20,7 @@ const sqlConfig = {
     }
   }
 
-  console.log(process.env.DB_USER);
+  
   async function getDbConnect(){
     try {
       const pool = new mssql.ConnectionPool(sqlConfig)
