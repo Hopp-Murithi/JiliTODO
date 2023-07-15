@@ -21,9 +21,12 @@ process.on("uncaughtException", (error) => {
 const server = app.listen(process.env.PORT, () => {
   console.clear();
   console.log(
-    `The server is listening on port ${process.env.PORT} on ${process.env.NODE_ENV} environment`
+    `The server is listening on http://localhost/${process.env.PORT} on ${process.env.NODE_ENV}mode`
   );
 });
+
+
+  
 
 /**
  * handling unhandled rejection error
