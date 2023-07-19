@@ -1,7 +1,6 @@
 require("dotenv").config({ path: "./config/config.env" });
-const app = require("./app");
-
-const getDbConnect = require("./database/database");
+import {app} from "./app";
+import  {getDbConnect} from "./database/database";
 
 getDbConnect()
   .then(() => {})
@@ -12,7 +11,7 @@ getDbConnect()
 /**
  * handling uncaught exception
  */
-process.on("uncaughtException", (error) => {
+process.on("uncaughtException", (error:any) => {
   console.error(`Uncaught exception error ${error.message}`);
   console.log("The app is shutting down due to uncaught Exception error");
   process.exit(1);
@@ -31,7 +30,7 @@ const server = app.listen(process.env.PORT, () => {
 /**
  * handling unhandled rejection error
  */
-process.on("unhandledRejection", (error) => {
+process.on("unhandledRejection", (error:any) => {
   console.error(`Unhandled rejection error: ${error.message}`);
   console.log("The app is shutting down due to unhandled rejection");
   server.close(() => {

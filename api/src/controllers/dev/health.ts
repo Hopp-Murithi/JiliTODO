@@ -1,4 +1,7 @@
-const checkHealth = (req, res) => {
+import {Request,Response} from 'express';
+
+
+ export const checkHealth = (req: Request, res:Response) => {
   try {
     return res.status(200).json({
       sucess: true,
@@ -12,4 +15,4 @@ const checkHealth = (req, res) => {
   }
 };
 
-module.exports = checkHealth;
+

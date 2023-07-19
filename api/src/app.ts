@@ -1,9 +1,9 @@
-const express = require("express");
-const health = require("./routes/dev/health")
-const swaggerUi = require("swagger-ui-express");
-const swaggerDocument = require("./swagger.json");
+import express from "express";
+import {health} from "./routes/dev/health";
+import swaggerUi from "swagger-ui-express"
+import swaggerDocument from "./swagger.json";
 
-const app = express();
+export const app = express();
 const jiliTodoBaseUrl = "/jilitodo/v1";
 /**
  * mounting middlwares
@@ -20,4 +20,4 @@ app.use(
     swaggerUi.setup(swaggerDocument)
     );
 
-module.exports = app;
+
