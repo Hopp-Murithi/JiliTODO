@@ -1,12 +1,6 @@
 require("dotenv").config({ path: "./config/config.env" });
 import {app} from "./app";
-import  {getDbConnect} from "./database/database";
 
-getDbConnect()
-  .then(() => {})
-  .catch((error) => {
-    console.error(error.message);
-  });
 
 /**
  * handling uncaught exception
@@ -18,7 +12,7 @@ process.on("uncaughtException", (error:any) => {
 });
 
 const server = app.listen(process.env.PORT, () => {
-  console.clear();
+  // console.clear();
   console.log(
     `The server is listening on http://localhost/${process.env.PORT} on ${process.env.NODE_ENV}mode`
   );
