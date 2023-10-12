@@ -1,0 +1,72 @@
+{
+    "openapi": "3.0.3",
+    "info": {
+        "title": "Jili Todo App",
+        "description": "Jili Todo App",
+        "version": "1.0.0"
+    },
+    "servers": [
+        {
+            "url": "http://localhost:6570/jilitodo/v1"
+        }
+    ],
+    "paths": {
+        "/dev/health": {
+            "get": {
+                "summary": "Check JiliTodo Api health",
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/HealthSuccessResponse"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Error",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/HealthErrorResponse"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "HealthSuccessResponse": {
+                "type": "object",
+                "properties": {
+                    "success": {
+                        "type": "boolean",
+                        "example": true
+                    },
+                    "message": {
+                        "type": "string",
+                        "example": "Jili Todo Api is doing good"
+                    }
+                }
+            },
+            "HealthErrorResponse": {
+                "type": "object",
+                "properties": {
+                    "success": {
+                        "type": "boolean",
+                        "example": false
+                    },
+                    "message": {
+                        "type": "string",
+                        "example": "Jili Todo Api is down"
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,10 +1,18 @@
 require("dotenv").config({ path: "./config/config.env" });
-import {app} from "./app";
+const app = require("./app");
+
+const getDbConnect = require("./database/db_builder");
+
+getDbConnect()
+  .then(() => {})
+  .catch((error) => {
+    console.error(error.message);
+  });
 
 /**
  * handling uncaught exception
  */
-process.on("uncaughtException", (error:any) => {
+process.on("uncaughtException", (error) => {
   console.error(`Uncaught exception error ${error.message}`);
   console.log("The app is shutting down due to uncaught Exception error");
   process.exit(1);
@@ -13,7 +21,7 @@ process.on("uncaughtException", (error:any) => {
 const server = app.listen(process.env.PORT, () => {
   console.clear();
   console.log(
-    `The server is listening on http://localhost/${process.env.PORT} on ${process.env.NODE_ENV}mode`
+    `The server is listening on port ${process.env.PORT} on ${process.env.NODE_ENV} environment`
   );
 });
 

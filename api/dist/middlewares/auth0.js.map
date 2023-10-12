@@ -1,0 +1,1 @@
+{"version":3,"file":"auth0.js","sourceRoot":"","sources":["../../src/middlewares/auth0.ts"],"names":[],"mappings":";;;AAAA,yEAA+C;AAElC,QAAA,QAAQ,GAAC,IAAA,gCAAI,EAAC;IACvB,QAAQ,EAAE,OAAO,CAAC,GAAG,CAAC,aAAa;IACnC,aAAa,EAAC,OAAO,CAAC,GAAG,CAAC,UAAU;CACvC,CAAC,CAAA"}

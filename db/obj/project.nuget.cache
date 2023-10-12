@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "uKBUzO3n3AJZZ6i512HUyZJjQ3Ab3lPgUR5To8T+z4WgTL8/gbmKlu9sUOLUEE41Zvn6CXnVMhDQDvAAm8OPLQ==",
+  "success": true,
+  "projectFilePath": "c:\\Users\\Hopp\\Documents\\JiliTODO\\db\\db.sqlproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Hopp\\.nuget\\packages\\microsoft.netframework.referenceassemblies\\1.0.0\\microsoft.netframework.referenceassemblies.1.0.0.nupkg.sha512",
+    "C:\\Users\\Hopp\\.nuget\\packages\\microsoft.netframework.referenceassemblies.net46\\1.0.0\\microsoft.netframework.referenceassemblies.net46.1.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

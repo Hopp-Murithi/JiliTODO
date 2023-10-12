@@ -1,0 +1,10 @@
+c:\Users\Hopp\Documents\JiliTODO\db\bin\Debug\db.dacpac
+c:\Users\Hopp\Documents\JiliTODO\db\bin\Debug\db.dll
+c:\Users\Hopp\Documents\JiliTODO\db\bin\Debug\db.pdb
+c:\Users\Hopp\Documents\JiliTODO\db\obj\Debug\db.sqlproj.AssemblyReference.cache
+c:\Users\Hopp\Documents\JiliTODO\db\obj\Debug\Model.xml
+c:\Users\Hopp\Documents\JiliTODO\db\obj\Debug\refactor.xml
+c:\Users\Hopp\Documents\JiliTODO\db\obj\Debug\postdeploy.sql
+c:\Users\Hopp\Documents\JiliTODO\db\obj\Debug\predeploy.sql
+c:\Users\Hopp\Documents\JiliTODO\db\obj\Debug\db.dll
+c:\Users\Hopp\Documents\JiliTODO\db\obj\Debug\db.pdb
